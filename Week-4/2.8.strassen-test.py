@@ -2,7 +2,7 @@ import sys
 import importlib.util
 
 module_name = "strassen"
-file_path = "2.8.strassen_answer.py"
+file_path = "2.8.strassen.py"
 
 def identity_matrix(n):
     return [[1 if i == j else 0 for j in range(n)] for i in range(n)]
@@ -183,7 +183,7 @@ test_cases[8]["expected"] = conventional_multiply(seq8, seq8)
 test_cases[9]["expected"] = test_cases[9]["A"]
 
 
-def run_test_cases(file_path='2.8.strassen_answer.py'):
+def run_test_cases(file_path='2.8.strassen.py'):
     spec = importlib.util.spec_from_file_location(module_name, file_path)
     strassen_module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(strassen_module)

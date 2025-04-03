@@ -3,7 +3,7 @@ import importlib.util
 import random
 
 module_name = "quicksort"
-file_path = "2.6.quicksort_answer.py"
+file_path = "2.6.quicksort.py"
 
 # 테스트 케이스
 random_list = [random.randint(0, 1000) for _ in range(10000)]
@@ -32,7 +32,7 @@ test_cases = [
      "desc": "음수와 양수 및 0 포함 배열"},
 ]
 
-def run_test_cases(file_path='2.6.quicksort_answer.py'):
+def run_test_cases(file_path='2.6.quicksort.py'):
     spec = importlib.util.spec_from_file_location(module_name, file_path)
     qs_module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(qs_module)
