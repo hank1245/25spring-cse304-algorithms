@@ -2,7 +2,6 @@ import sys
 import importlib.util
 
 module_name = "strassen"
-file_path = "2.8.strassen.py"
 
 def identity_matrix(n):
     return [[1 if i == j else 0 for j in range(n)] for i in range(n)]

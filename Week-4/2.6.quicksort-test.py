@@ -3,7 +3,6 @@ import importlib.util
 import random
 
 module_name = "quicksort"
-file_path = "2.6.quicksort.py"
 
 # 테스트 케이스
 random_list = [random.randint(0, 1000) for _ in range(10000)]
