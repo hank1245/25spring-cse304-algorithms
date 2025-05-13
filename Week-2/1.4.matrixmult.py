@@ -8,6 +8,6 @@ def matrixmult(n: int, A: List[List[int]], B: List[List[int]]) -> List[List[int]
         for j in range(0,n):
             C[i][j] = 0
             for k in range(0,n):
-                C[i][j] = C[i][j] + A[i][k]*B[k][j]
+                C[i][j] = C[i][j] +A[i][k]*B[k][j]
 
     return C

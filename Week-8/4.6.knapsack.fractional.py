@@ -17,5 +17,14 @@ def knapsack(n: int, W: float, w: List[float], p: List[float]) -> float:
     total_weight: float = 0.0
 
     # Complete the code here
+    while heap and total_weight < W:
+        _, item = heappop(heap)
+        if total_weight + item.weight <= W:
+            total_weight += item.weight
+            maxprofit += item.profit
+        else:
+            fraction = (W - total_weight) / item.weight
+            maxprofit += item.profit * fraction
+            break
 
     return maxprofit

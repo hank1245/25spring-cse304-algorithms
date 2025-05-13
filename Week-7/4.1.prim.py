@@ -30,5 +30,4 @@ def prim(n: int, W: List[List[float]]) -> List[Tuple[int, int, float]]:
             if W[i][vnear] < distance[i]:
                 distance[i] = W[i][vnear]
                 nearest[i] = vnear
-
     return F
